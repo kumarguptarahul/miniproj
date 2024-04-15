@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>FITNESS TRACKER</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <link rel="stylesheet" href="styles.css"> 
+</head> 
+<body> 
+    <center>
+    <div class="app"> 
+        <h1>fitness  Tracker <i class="fas fa-heartbeat"></i></h1> 
+        <div class="inputs"> 
+            <div> 
+                <label for="steps">steps</label> 
+                <input id="steps" type="number"> 
+            </div> 
+            <div> 
+                <label for="calories">calories burned</label> 
+                <input id="calories" type="number"> 
+            </div> 
+            <div> 
+                <label for="waterIntake">water in take (in ml)</label> 
+                <input id="water" type="number"> 
+            </div> 
+        </div> 
+        <button id="submit">Submit</button> 
+        <div id="editSection" class="hidden"> 
+            <button id="cancelEdit">Cancel</button> 
+            <button id="updateEntry">Update</button> 
+        </div> 
+        <table> 
+            <thead> 
+                <tr> 
+                    <th>Date</th> 
+                    <th>steps</th> 
+                    <th>calories</th> 
+                    <th>water (ml)</th> 
+                    <th>Edit</th> 
+                    <th>Delete</th> 
+                </tr> 
+            </thead> 
+            <tbody id="output"> 
+            </tbody> 
+        </table> 
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script> 
+    <script src="script.js"></script> 
+</center>
+</body> 
+</html>
